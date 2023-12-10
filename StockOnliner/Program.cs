@@ -13,6 +13,7 @@ namespace StockOnliner
             StockExchangeMonitor stockExchangeMonitor = new StockExchangeMonitor();
             stockExchangeMonitor.PriceChangeHandler = ShowPrice;
             stockExchangeMonitor.Start();
+            
 
 
         }

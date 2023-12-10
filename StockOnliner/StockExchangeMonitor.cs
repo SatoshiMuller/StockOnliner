@@ -22,8 +22,16 @@ namespace StockOnliner
                 PriceChangeHandler(bankOfAmericaPrice);
 
                 Thread.Sleep(2000);
+
+                if (bankOfAmericaPrice <= 20)
+                {
+                    Console.WriteLine("Цена достигла 20. Программа завершает работу.");
+                    break; 
+                }
+
+
             }
-            
+               
 
         }
 
